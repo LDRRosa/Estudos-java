@@ -21,7 +21,7 @@ package lista2Prog2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicio05 {
+public class Exercicio06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -46,8 +46,8 @@ public class Exercicio05 {
         praiamaisperto(distancia);
         praiamaislotada(veranistas);
         praiamaisquequinze(distancia);
-        numeropraiasasfaltadas(estrada);
-        numeropraiassemasfalto(estrada);
+        System.out.println(numeropraiasasfaltadas(estrada, veranistas) + " turistas frequentaram as praias com estradas asfaltadas");
+        System.out.println(numeropraiassemasfalto(estrada, veranistas)+ " turistas frequentaram as praias com estradas Não asfaltadas");
         scanner.close();
     }
 
@@ -94,23 +94,23 @@ public class Exercicio05 {
         System.out.println(cont + " praias estão mais distantes que 15KM");
     }
 
-    public static void numeropraiasasfaltadas(int estrada[]) {
+    public static int numeropraiasasfaltadas(int estrada[], int veranistas[]) {
         int quantidade = 0;
         for (int i = 0; i < 16; i++) {
             if (estrada[i] == 1) {
-                quantidade += estrada[i];
+                quantidade += veranistas[i];
             }
         }
-        System.out.println(quantidade + " turistas frequentaram as praias com estradas asfaltadas");
+        return quantidade;
     }
 
-public static void numeropraiassemasfalto(int estrada[]) {
+public static int numeropraiassemasfalto(int estrada[], int veranistas[]) {
     int quantidade = 0;
         for (int i = 0; i < 16; i++) {
             if (estrada[i] == 0) {
-                quantidade += estrada[i];
+                quantidade += veranistas[i];
             }
         }
-        System.out.println(quantidade + " turistas frequentaram as praias com estradas Não asfaltadas");
+        return quantidade;
     }
 }
