@@ -1,5 +1,5 @@
 package lista2Prog2;
-
+//Tenho que terminar(não funciona!!)
 import java.util.Scanner;
 
 public class Exercicio04TEMQUEACABR {
