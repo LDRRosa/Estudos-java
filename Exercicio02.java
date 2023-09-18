@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Exercicio02 {
-
+//tenho que terminar este exercicio!
     public static int linhas, colunas;
 
     public static void main(String[] args) {
