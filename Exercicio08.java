@@ -9,15 +9,15 @@ public class Exercicio08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int raio = 0, centrox = 0, centroy = 0, linhas = 0, colunas = 0;
-        System.out.println("Digite a quantodade de linhas terá a matriz: ");
+        System.out.println("Digite a quantodade de linhas terá acirculo: ");
         linhas = scanner.nextInt();
-        System.out.println("Digite a quantodade de colunas terá matriz: ");
+        System.out.println("Digite a quantodade de colunas terá acirculo: ");
         colunas = scanner.nextInt();
-        System.out.println("Digite a coordenada x do centro da matriz: ");
+        System.out.println("Digite a coordenada x do centro do circulo: ");
         centrox = scanner.nextInt();
-        System.out.println("Digite a coordenada y do centro da matriz: ");
+        System.out.println("Digite a coordenada y do centro do circulo: ");
         centroy = scanner.nextInt();
-        System.out.println("Digite o raio do circulo(não utrapassar a metade do valor de linas e colunas): ");
+        System.out.println("Digite o raio do circulo: ");
         raio = scanner.nextInt();
 
         char[][] circulo = new char[linhas][colunas];
