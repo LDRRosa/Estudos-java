@@ -1,3 +1,7 @@
+/* Faça um método que receba uma matriz de inteiros (variando de 0 a 63), a quantidade de linhas e
+colunas na matriz e calcule e imprima o histograma da matriz retornando o valor que mais apareceu
+(o histograma é o diagrama de frequência e informa quantas vezes cada valor, dentro do intervalo
+válido, ocorreu na matriz) */
 package lista2Prog2;
 
 import java.util.Random;
